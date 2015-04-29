@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="databaseType" v="Oracle Database"/>
+      <value n="databaseVersion" v="120"/>
+   </hash>
+   <value n="id" v="227fdf4f-1c15-43a8-ada7-29ef8615625e"/>
+   <value n="name" v="lybesShop"/>
+</ProviderSettings>
