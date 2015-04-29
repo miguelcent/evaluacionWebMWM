@@ -10,7 +10,7 @@ import javax.faces.context.FacesContext;
 import mwm.mcm.UserBeanLocal;
 import mwm.mcm.entities.User;
 
-@ManagedBean
+@ManagedBean (name = "loginBean")
 @RequestScoped
 public class LoginManagedBean {
     
@@ -24,7 +24,7 @@ public class LoginManagedBean {
         context = FacesContext.getCurrentInstance();
     }
     
-    public User getUuario(){
+    public User getUser(){
         return user;
     }
             

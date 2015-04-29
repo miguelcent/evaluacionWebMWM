@@ -77,6 +77,8 @@
          <string v="Database"/>
          <string v="Database-Modeling"/>
          <string v="EJB-Modeling"/>
+         <string v="HTML"/>
+         <string v="JAVASCRIPT"/>
          <string v="JSF"/>
          <string v="JSP"/>
          <string v="Java"/>
@@ -187,7 +189,37 @@
             <value n="id" v="JSTL 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Primefaces-5.1.3-UR-sources.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Primefaces-5.1.3-UR.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/primefaces-5.1.3-UR-sources.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Primefaces-5.1.3-UR-sources.jar"/>
+               <value n="id" v="Primefaces-5.1.3-UR-sources.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/primefaces-5.1.3-UR.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Primefaces-5.1.3-UR.jar"/>
+               <value n="id" v="Primefaces-5.1.3-UR.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
       <list n="libraryReferences">
          <hash>
             <value n="id" v="JSP Runtime"/>
@@ -199,6 +231,14 @@
          </hash>
          <hash>
             <value n="id" v="JSTL 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Primefaces-5.1.3-UR-sources.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Primefaces-5.1.3-UR.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
