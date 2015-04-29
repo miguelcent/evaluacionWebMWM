@@ -5,12 +5,12 @@
   <persistence-unit name="lybesShop">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>java:/app/jdbc/jdbc/lybesShopDS</jta-data-source>
-    <class>mwm.mcm.entities.User</class>
     <class>mwm.mcm.entities.UserType</class>
+    <class>mwm.mcm.entities.Product</class>
     <class>mwm.mcm.entities.ProductCategory</class>
     <class>mwm.mcm.entities.Sale</class>
     <class>mwm.mcm.entities.SaleLine</class>
-    <class>mwm.mcm.entities.Product</class>
+    <class>mwm.mcm.entities.UserMCM</class>
     <properties>
       <property name="eclipselink.target-server" value="WebLogic_10"/>
       <property name="eclipselink.target-database" value="Oracle12"/>

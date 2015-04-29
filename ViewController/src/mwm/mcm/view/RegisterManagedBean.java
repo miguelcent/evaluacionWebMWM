@@ -8,7 +8,7 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
 import mwm.mcm.UserBeanLocal;
-import mwm.mcm.entities.User;
+import mwm.mcm.entities.UserMCM;
 
 @ManagedBean(name = "RegisterBean")
 @RequestScoped
@@ -16,14 +16,14 @@ public class RegisterManagedBean {
     private FacesContext context;
     @EJB
     private UserBeanLocal usuarioBean;
-    private User usuario;
+    private UserMCM usuario;
     private String repassword;
     
     public RegisterManagedBean() {
-        usuario = new User();
+        usuario = new UserMCM();
         context = FacesContext.getCurrentInstance();
     }
-    public User getUsuario() {
+    public UserMCM getUsuario() {
         return usuario;
     }
     public String getRepassword() {
@@ -35,7 +35,7 @@ public class RegisterManagedBean {
     public String register() {
         String res = validate();
         if ( !res.equals( "ERROR" ) ) {
-            User u = usuarioBean.persistUser( usuario );
+            UserMCM u = usuarioBean.persistUser( usuario );
             if ( u == null ) {
                 context.addMessage( null, new
                 FacesMessage(FacesMessage.SEVERITY_INFO, "Error", "No se ha " +

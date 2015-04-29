@@ -39,7 +39,7 @@ public class Sale implements Serializable {
     private Date date;
     
     @ManyToOne
-    private User user;
+    private UserMCM user;
     
     @OneToMany(mappedBy="sale", cascade=CascadeType.ALL)
     private List<SaleLine> saleLines;
@@ -75,11 +75,11 @@ public class Sale implements Serializable {
         this.date = date;
     }
     
-    public User getUser(){
+    public UserMCM getUserMCM(){
         return user;
     }
     
-    public void setUser(User user){
+    public void setUserMCM(UserMCM user){
         this.user = user;
     }
     

@@ -4,17 +4,18 @@ import java.util.List;
 
 import javax.ejb.Local;
 
-import mwm.mcm.entities.User;
+import mwm.mcm.entities.UserMCM;
+
 
 @Local
 public interface UserBeanLocal {
-    User persistUser(User user);
+    UserMCM persistUser(UserMCM user);
 
-    User mergeUser(User user);
+    UserMCM mergeUser(UserMCM user);
 
-    void removeUser(User user);
+    void removeUser(UserMCM user);
 
-    List<User> getUserFindAll();
+    List<UserMCM> getUserFindAll();
     
-    User getUserUsernamePassword(String username, String password);
+    UserMCM getUserUsernamePassword(String username, String password);
 }

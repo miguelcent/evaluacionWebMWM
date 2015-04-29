@@ -33,7 +33,7 @@ public class UserType implements Serializable {
     
     @OneToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="ID")
-    User user;
+    UserMCM user;
 
     public UserType() {
     }
@@ -58,11 +58,11 @@ public class UserType implements Serializable {
         this.typeName = typeName;
     }
     
-    public User getUser(){
+    public UserMCM getUserMCM(){
         return user;
     }
     
-    public void setUser(User user){
+    public void setUserMCM(UserMCM user){
         this.user = user;
     }   
 }
